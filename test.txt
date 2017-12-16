@@ -1,0 +1,551 @@
+D, [2017-12-14T18:59:46.694739 #2805] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+Movie
+D, [2017-12-14T18:59:46.834996 #2805] DEBUG -- :   [1m[35m (2.4ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.835918 #2805] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.836171 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.839088 #2805] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.839405 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.839943 #2805] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+  inherits from ActiveRecord::Base
+  Movie.new
+D, [2017-12-14T18:59:46.842612 #2805] DEBUG -- :   [1m[35m (1.8ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.842911 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.843584 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.846876 #2805] DEBUG -- :   [1m[36m (2.2ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.847902 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.848174 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    has a title (FAILED - 1)
+D, [2017-12-14T18:59:46.850468 #2805] DEBUG -- :   [1m[35m (1.6ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.851821 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.852217 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.854146 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.854460 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.854631 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    has a release date (FAILED - 2)
+D, [2017-12-14T18:59:46.857238 #2805] DEBUG -- :   [1m[35m (2.2ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.857611 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.857811 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.859539 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.859850 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.860048 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    has a director (FAILED - 3)
+D, [2017-12-14T18:59:46.862517 #2805] DEBUG -- :   [1m[35m (2.0ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.862831 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.863065 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.864739 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.865087 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.865290 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    has a lead actor/actress (FAILED - 4)
+D, [2017-12-14T18:59:46.867548 #2805] DEBUG -- :   [1m[35m (1.5ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.867781 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.868152 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.870009 #2805] DEBUG -- :   [1m[36m (1.6ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.870364 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.870548 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    has an in theaters flag (FAILED - 5)
+  ::new
+D, [2017-12-14T18:59:46.872441 #2805] DEBUG -- :   [1m[35m (1.4ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.872720 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.872909 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.892899 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.893244 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.893500 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    can be instantiated without any attributes (FAILED - 6)
+D, [2017-12-14T18:59:46.895284 #2805] DEBUG -- :   [1m[35m (1.3ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.895596 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.895774 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.897373 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.897709 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.897910 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    can be instantiated with a hash of attributes
+  #save
+D, [2017-12-14T18:59:46.899660 #2805] DEBUG -- :   [1m[35m (1.3ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.899995 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.900168 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.902189 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.902537 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.902732 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+    can be saved to the database (FAILED - 7)
+  basic CRUD
+    creating
+D, [2017-12-14T18:59:46.905047 #2805] DEBUG -- :   [1m[35m (1.7ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.905451 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.905634 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.907523 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.907787 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.908040 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+      can be instantiated and then saved (FAILED - 8)
+D, [2017-12-14T18:59:46.910187 #2805] DEBUG -- :   [1m[35m (1.6ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.910760 #2805] DEBUG -- :   [1m[36m (0.4ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.911373 #2805] DEBUG -- :   [1m[35m (0.4ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+D, [2017-12-14T18:59:46.930980 #2805] DEBUG -- :   [1m[36mMovie Load (0.5ms)[0m  [1mSELECT  "movies".* FROM "movies" WHERE "movies"."title" = ? AND "movies"."release_date" = ? AND "movies"."director" = ? AND "movies"."lead" = ? AND "movies"."in_theaters" = ? LIMIT 1[0m  [["title", "The Sting"], ["release_date", 1973], ["director", "George Roy Hill"], ["lead", "Paul Newman"], ["in_theaters", "f"]]
+D, [2017-12-14T18:59:46.933973 #2805] DEBUG -- :   [1m[35m (2.1ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.934225 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.934499 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can be created with a hash of attributes (FAILED - 9)
+D, [2017-12-14T18:59:46.936819 #2805] DEBUG -- :   [1m[36m (1.8ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.937069 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.937424 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.939331 #2805] DEBUG -- :   [1m[35m (1.6ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.939758 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.940040 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can be created in a block (FAILED - 10)
+    reading
+D, [2017-12-14T18:59:46.943480 #2805] DEBUG -- :   [1m[36m (2.3ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.943929 #2805] DEBUG -- :   [1m[35m (0.3ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.944132 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.950472 #2805] DEBUG -- :   [1m[35m (5.9ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.950944 #2805] DEBUG -- :   [1m[36m (0.3ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.951143 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can get the first item in the database (FAILED - 11)
+D, [2017-12-14T18:59:46.953486 #2805] DEBUG -- :   [1m[36m (1.7ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.953925 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.954138 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.955672 #2805] DEBUG -- :   [1m[35m (1.2ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.955880 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.956044 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can get the last item in the databse (FAILED - 12)
+D, [2017-12-14T18:59:46.957985 #2805] DEBUG -- :   [1m[36m (1.3ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.958193 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.958365 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.960053 #2805] DEBUG -- :   [1m[35m (1.4ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.960443 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.960806 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can get size of the database (FAILED - 13)
+D, [2017-12-14T18:59:46.962488 #2805] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.962783 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.962967 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.964399 #2805] DEBUG -- :   [1m[35m (1.2ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.964629 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.964866 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can retrive the first item from the database by id (FAILED - 14)
+D, [2017-12-14T18:59:46.966644 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.966904 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.967144 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.969054 #2805] DEBUG -- :   [1m[35m (1.6ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.969243 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.969422 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can retrieve from the database using different attributes (FAILED - 15)
+D, [2017-12-14T18:59:46.973287 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.973561 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.973760 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.975363 #2805] DEBUG -- :   [1m[35m (1.3ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.975557 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.975725 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can use a where clause and be sorted (FAILED - 16)
+    updating
+D, [2017-12-14T18:59:46.977691 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.977892 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.978125 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.979831 #2805] DEBUG -- :   [1m[35m (1.5ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.980040 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.980340 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can be found, updated, and saved (FAILED - 17)
+D, [2017-12-14T18:59:46.982276 #2805] DEBUG -- :   [1m[36m (1.4ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.982529 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.982753 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.984406 #2805] DEBUG -- :   [1m[35m (1.4ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.984632 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.984862 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can be updated using #update (FAILED - 18)
+D, [2017-12-14T18:59:46.986941 #2805] DEBUG -- :   [1m[36m (1.6ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.987163 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.987452 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.989152 #2805] DEBUG -- :   [1m[35m (1.5ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.989354 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.989641 #2805] DEBUG -- :   [1m[35m (0.2ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can update all records at once (FAILED - 19)
+    destroying
+D, [2017-12-14T18:59:46.991386 #2805] DEBUG -- :   [1m[36m (1.2ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.991606 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.991876 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.993419 #2805] DEBUG -- :   [1m[35m (1.3ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.993721 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.993919 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can destroy a single item (FAILED - 20)
+D, [2017-12-14T18:59:46.995866 #2805] DEBUG -- :   [1m[36m (1.5ms)[0m  [1mDELETE FROM "movies";[0m
+D, [2017-12-14T18:59:46.996187 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+D, [2017-12-14T18:59:46.996418 #2805] DEBUG -- :   [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'movies';[0m
+D, [2017-12-14T18:59:46.998067 #2805] DEBUG -- :   [1m[35m (1.3ms)[0m  DELETE FROM "movies";
+D, [2017-12-14T18:59:46.998390 #2805] DEBUG -- :   [1m[36m (0.2ms)[0m  [1mSELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';[0m
+D, [2017-12-14T18:59:46.998583 #2805] DEBUG -- :   [1m[35m (0.1ms)[0m  DELETE FROM sqlite_sequence where name = 'movies';
+      can destroy all items at once (FAILED - 21)
+
+Failures:
+
+  1) Movie Movie.new has a title
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./spec/models/movie_spec.rb:15:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:17:in `block (3 levels) in <top (required)>'
+
+  2) Movie Movie.new has a release date
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./spec/models/movie_spec.rb:15:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:22:in `block (3 levels) in <top (required)>'
+
+  3) Movie Movie.new has a director
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./spec/models/movie_spec.rb:15:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:27:in `block (3 levels) in <top (required)>'
+
+  4) Movie Movie.new has a lead actor/actress
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./spec/models/movie_spec.rb:15:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:32:in `block (3 levels) in <top (required)>'
+
+  5) Movie Movie.new has an in theaters flag
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./spec/models/movie_spec.rb:15:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:37:in `block (3 levels) in <top (required)>'
+
+  6) Movie ::new can be instantiated without any attributes
+     Failure/Error: expect{Movie.new}.to_not raise_error
+
+       expected no Exception, got #<ArgumentError: wrong number of arguments (given 0, expected 1)> with backtrace:
+         # ./app/models/movie.rb:4:in `initialize'
+         # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+         # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+         # ./spec/models/movie_spec.rb:44:in `block (4 levels) in <top (required)>'
+         # ./spec/models/movie_spec.rb:44:in `block (3 levels) in <top (required)>'
+     # ./spec/models/movie_spec.rb:44:in `block (3 levels) in <top (required)>'
+
+  7) Movie #save can be saved to the database
+     Failure/Error: movie.save
+
+     NoMethodError:
+       undefined method `[]' for nil:NilClass
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+     # ./spec/models/movie_spec.rb:55:in `block (3 levels) in <top (required)>'
+     # ------------------
+     # --- Caused by: ---
+     # NoMethodError:
+     #   undefined method `fetch_value' for nil:NilClass
+     #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  8) Movie basic CRUD creating can be instantiated and then saved
+     Failure/Error:
+       def initialize(attributes)
+         attributes.each do |property,value|
+           self.public_send("#{property}=",value)
+         end
+
+     ArgumentError:
+       wrong number of arguments (given 0, expected 1)
+     # ./app/models/movie.rb:4:in `initialize'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+     # ./app/movies_controller.rb:9:in `can_be_instantiated_and_then_saved'
+     # ./spec/models/movie_spec.rb:64:in `block (4 levels) in <top (required)>'
+
+  9) Movie basic CRUD creating can be created with a hash of attributes
+     Failure/Error: expect(Movie.find_by(attributes)).to eq(movie)
+
+       expected: #<Movie not initialized>
+            got: nil
+
+       (compared using ==)
+     # ./spec/models/movie_spec.rb:70:in `block (4 levels) in <top (required)>'
+
+  10) Movie basic CRUD creating can be created in a block
+      Failure/Error:
+        attributes.each do |property,value|
+          self.public_send("#{property}=",value)
+        end
+
+      NoMethodError:
+        undefined method `each' for nil:NilClass
+      # ./app/models/movie.rb:5:in `initialize'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/inheritance.rb:61:in `new'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:33:in `create'
+      # ./app/movies_controller.rb:26:in `can_be_created_in_a_block'
+      # ./spec/models/movie_spec.rb:74:in `block (4 levels) in <top (required)>'
+
+  11) Movie basic CRUD reading can get the first item in the database
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  12) Movie basic CRUD reading can get the last item in the databse
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  13) Movie basic CRUD reading can get size of the database
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  14) Movie basic CRUD reading can retrive the first item from the database by id
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  15) Movie basic CRUD reading can retrieve from the database using different attributes
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  16) Movie basic CRUD reading can use a where clause and be sorted
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: i+2000)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:85:in `block (5 levels) in <top (required)>'
+      # ./spec/models/movie_spec.rb:84:in `times'
+      # ./spec/models/movie_spec.rb:84:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  17) Movie basic CRUD updating can be found, updated, and saved
+      Failure/Error: movie = Movie.create(title: "Awesome Flick")
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./spec/models/movie_spec.rb:120:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  18) Movie basic CRUD updating can be updated using #update
+      Failure/Error: Movie.create(title: "Wat?")
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./app/movies_controller.rb:70:in `can_update_using_update_method'
+      # ./spec/models/movie_spec.rb:128:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  19) Movie basic CRUD updating can update all records at once
+      Failure/Error: Movie.create(title: "Movie_#{i}", release_date: 2000+i)
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./app/movies_controller.rb:78:in `block in can_update_multiple_items_at_once'
+      # ./app/movies_controller.rb:77:in `times'
+      # ./app/movies_controller.rb:77:in `can_update_multiple_items_at_once'
+      # ./spec/models/movie_spec.rb:133:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  20) Movie basic CRUD destroying can destroy a single item
+      Failure/Error: Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./app/movies_controller.rb:84:in `can_destroy_a_single_item'
+      # ./spec/models/movie_spec.rb:140:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+  21) Movie basic CRUD destroying can destroy all items at once
+      Failure/Error: Movie.create(title: "Movie_#{i}")
+
+      NoMethodError:
+        undefined method `[]' for nil:NilClass
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:381:in `clear_transaction_record_state'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `ensure in rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:306:in `rollback_active_record_state!'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/transactions.rb:285:in `save'
+      # /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/persistence.rb:34:in `create'
+      # ./app/movies_controller.rb:91:in `block in can_destroy_all_items_at_once'
+      # ./app/movies_controller.rb:90:in `times'
+      # ./app/movies_controller.rb:90:in `can_destroy_all_items_at_once'
+      # ./spec/models/movie_spec.rb:145:in `block (4 levels) in <top (required)>'
+      # ------------------
+      # --- Caused by: ---
+      # NoMethodError:
+      #   undefined method `fetch_value' for nil:NilClass
+      #   /usr/local/rvm/gems/ruby-2.3.1/gems/activerecord-4.2.6/lib/active_record/attribute_methods/read.rb:93:in `_read_attribute'
+
+Finished in 0.16735 seconds (files took 1.26 seconds to load)
+23 examples, 21 failures
+
+Failed examples:
+
+rspec ./spec/models/movie_spec.rb:16 # Movie Movie.new has a title
+rspec ./spec/models/movie_spec.rb:21 # Movie Movie.new has a release date
+rspec ./spec/models/movie_spec.rb:26 # Movie Movie.new has a director
+rspec ./spec/models/movie_spec.rb:31 # Movie Movie.new has a lead actor/actress
+rspec ./spec/models/movie_spec.rb:36 # Movie Movie.new has an in theaters flag
+rspec ./spec/models/movie_spec.rb:43 # Movie ::new can be instantiated without any attributes
+rspec ./spec/models/movie_spec.rb:53 # Movie #save can be saved to the database
+rspec ./spec/models/movie_spec.rb:63 # Movie basic CRUD creating can be instantiated and then saved
+rspec ./spec/models/movie_spec.rb:68 # Movie basic CRUD creating can be created with a hash of attributes
+rspec ./spec/models/movie_spec.rb:73 # Movie basic CRUD creating can be created in a block
+rspec ./spec/models/movie_spec.rb:89 # Movie basic CRUD reading can get the first item in the database
+rspec ./spec/models/movie_spec.rb:94 # Movie basic CRUD reading can get the last item in the databse
+rspec ./spec/models/movie_spec.rb:99 # Movie basic CRUD reading can get size of the database
+rspec ./spec/models/movie_spec.rb:104 # Movie basic CRUD reading can retrive the first item from the database by id
+rspec ./spec/models/movie_spec.rb:108 # Movie basic CRUD reading can retrieve from the database using different attributes
+rspec ./spec/models/movie_spec.rb:113 # Movie basic CRUD reading can use a where clause and be sorted
+rspec ./spec/models/movie_spec.rb:119 # Movie basic CRUD updating can be found, updated, and saved
+rspec ./spec/models/movie_spec.rb:127 # Movie basic CRUD updating can be updated using #update
+rspec ./spec/models/movie_spec.rb:132 # Movie basic CRUD updating can update all records at once
+rspec ./spec/models/movie_spec.rb:139 # Movie basic CRUD destroying can destroy a single item
+rspec ./spec/models/movie_spec.rb:144 # Movie basic CRUD destroying can destroy all items at once
+
